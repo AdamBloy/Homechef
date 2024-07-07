@@ -1,0 +1,199 @@
+.recipeContainer {
+  border: 1px solid var(--primary-grey);
+  /* width: 100%; */
+}
+
+.recipeCard {
+  width: 100%;
+  background-color: var(--secondary-background-trans);
+  border: 1px solid var(--primary-grey);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  gap: 0em 1em;
+  grid-template-areas:
+    ". ."
+    ". .";
+  padding: 2rem;
+}
+
+.recipeCard img {
+  max-height: 20rem;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.recipeImage {
+  padding: 2rem;
+  border: 1px solid transparent;
+}
+.recipeBackButton {
+  padding: 1rem;
+  border: 1px solid var(--primary-grey);
+  margin-top: 1rem;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+}
+.recipeBackButton:hover {
+  background-color: var(--primary-white);
+  color: var(--secondary-background);
+  transition: all 0.5s;
+}
+.printButton {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid var(--primary-yellow);
+  transition: all 0.5s;
+}
+.printButton:hover {
+  background-color: var(--primary-white);
+  color: var(--secondary-background);
+  transition: all 0.5s;
+}
+
+.recipeIconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transform: translate(1px);
+}
+.receipeCardIcons {
+  background-color: var(--primary-grey);
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 15%;
+}
+
+.recipeMainInfo {
+  border: 1px solid transparent;
+  border-left: 1px solid var(--primary-grey);
+}
+
+.ingredientListContainer {
+  padding-left: 2rem;
+  padding-top: 0.25rem;
+}
+.ingredientList {
+  padding-top: 0.5rem;
+  list-style: none;
+  font-weight: 200;
+}
+
+.methodContainer {
+  border-left: 1px solid var(--primary-grey);
+  padding-left: 1rem;
+  font-weight: 200;
+}
+.currentRecipeInfoContainer {
+  padding: 1rem;
+}
+
+.currentRecipeInfoContainer h1 {
+  font-weight: 100;
+  font-size: 400%;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  /* border-bottom: 1px solid var(--primary-yellow); */
+}
+.currentRecipeInfoContainer h2 {
+  font-weight: 500;
+  font-size: 125%;
+  border-bottom: 1px solid var(--primary-yellow);
+  padding-bottom: 1rem;
+}
+.recipeLongDescription {
+  font-weight: 100;
+  font-size: 125%;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.methodList {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.methodOrderedList {
+  padding-left: 1rem;
+}
+
+.methodHeading,
+.ingredientHeading {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--primary-grey);
+  width: 30%;
+}
+
+.recipeSubContainer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.recImg {
+  /* border: 5px solid purple; */
+  height: 25rem;
+}
+
+.recipeSubInfo {
+  background-color: var(--primary-grey);
+  border: 1px solid var(--primary-grey);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.25rem;
+  transition: all 0.5s;
+  padding-right: 0.5rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.recipeSubInfo img {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+.recipeSubInfo:hover {
+  background-color: var(--primary-white);
+  transition: all 0.5s;
+  color: var(--secondary-background);
+}
+.recipeSubInfo:hover > .submitName h2 {
+  background-color: var(--primary-white);
+  transition: all 1.5s;
+  color: var(--secondary-background);
+}
+.recipeSubInfo:hover > .submitName p {
+  background-color: var(--primary-white);
+  transition: all 1.5s;
+  color: var(--secondary-background);
+}
+
+.submitName {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  transition: all 1s;
+}
+.submitName h2 {
+  transition: all0 1s;
+}
+.submitName p {
+  transition: all0 1s;
+}
+
+.recipeSubmitButton {
+  /* background-color: var(--secondary-background); */
+  /* color: var(--primary-yellow); */
+  transition: all 0.5s;
+  padding-top: 0.5rem;
+  color: var(--primary-white);
+}

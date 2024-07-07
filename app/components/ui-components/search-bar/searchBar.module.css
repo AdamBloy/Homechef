@@ -1,0 +1,113 @@
+.searchContainer {
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  border: 1px solid var(--primary-grey);
+  background-color: var(--secondary-background-trans);
+  align-items: center;
+}
+
+@media (max-width: 548px) {
+  .searchContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.btnContainer {
+  display: flex;
+}
+@media (max-width: 548px) {
+  .btnContainer {
+    margin-top: 0.5rem;
+  }
+}
+
+.searchContainer p {
+  margin-right: 2rem;
+  padding: 0.25rem;
+}
+
+@media (max-width: 1024px) {
+  .searchContainer p {
+    font-size: 0.85rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 548px) {
+  .searchContainer p {
+    display: none;
+  }
+}
+
+.searchContainer input {
+  margin-right: 0.25rem;
+  padding: 0.5rem 0.25rem;
+  color: var(--primary-grey);
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .searchContainer input {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 594px) {
+  .searchContainer input {
+    width: 90%;
+  }
+}
+
+.searchButton {
+  background-color: var(--primary-yellow);
+  padding: 0.25rem;
+  border: 1px solid var(--primary-grey);
+  color: var(--primary-background);
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.clearButton {
+  background-color: var(--primary-grey);
+  padding: 0.25rem;
+  border: 1px solid var(--primary-grey);
+  color: var(--primary-text-colour);
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.searchButton:hover {
+  background-color: var(--primary-text-colour);
+  border: 1px solid var(--primary-grey);
+  color: var(--primary-background);
+  transition: all 0.5s;
+}
+.clearButton:hover {
+  background-color: var(--primary-background);
+  border: 1px solid var(--primary-grey);
+  color: var(--primary-yellow);
+  transition: all 0.5s;
+}
+
+@media (max-width: 1024px) {
+  .searchButton {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 1024px) {
+  .clearButton {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .searchButton {
+    margin-left: 0rem;
+  }
+}

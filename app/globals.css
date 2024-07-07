@@ -1,0 +1,86 @@
+:root {
+  --max-width: 2024px;
+  --border-radius: 12px;
+  /* --font-mono: "Open-sans"; */
+
+  --primary-background: #272727;
+  --primary-background-trans: #272727c7;
+  --secondary-background: #222222;
+  --secondary-background-trans: #222222a1;
+  --primary-text-colour: #eff1f3;
+  --secondary-text-colour: #272727;
+  --primary-white: #eff1f3;
+  --primary-grey: #3f3f3f;
+  --primary-yellow: #fed766;
+  --primary-yellow-trans: #fed866c4;
+  --form-background: rgb(49, 49, 46);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-background: #272727;
+    --secondary-background: #141414;
+    --primary-text-colour: #eff1f3;
+    --primary-white: #eff1f3;
+    --primary-yellow: #fed766;
+    --secondary-text-colour: #272727;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--primary-text-colour);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: var(--primary-background);
+  font-family: var(--font-open-sans);
+}
+
+h1 {
+  font-weight: 400;
+}
+h2 {
+  font-weight: 300;
+}
+h3 {
+  font-size: 80%;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--primary-background);
+  background-image: url(../images/foodplaceholder2-min.png);
+  box-shadow: inset 0 0 0 1000px rgba(20, 20, 20, 0.85);
+}
+
+/* body::after {
+  content: "";
+  background: black;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+h1 {
+  color: var(--primary-text-colour);
+}

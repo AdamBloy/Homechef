@@ -1,0 +1,17 @@
+.signInButton {
+  background-color: var(--secondary-background);
+  padding: 0.5rem;
+  border: 1px solid var(--primary-yellow);
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.btnText {
+  font-size: 1.25rem;
+}
