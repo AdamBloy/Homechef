@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import { headerItems } from "./nav-items";
 import Link from "next/link";
@@ -14,10 +14,8 @@ export default function Header() {
     setHideMenu(!hideMenu);
   }
 
-  const windowSize = window.innerWidth;
-
   function mobileMenuSetting() {
-    if (windowSize <= 668) {
+    if (window.innerWidth <= 668) {
       setMobileMenuActive(!mobileMenuActive);
     }
   }
