@@ -135,7 +135,6 @@ export default function SubmitRecipe() {
     console.log(newRecipe);
     console.log("ADD TO DB RECIPE IMAGE", typeof newRecipe.image[0]);
     console.log("ADD TO DB USER IMAGE", typeof newRecipe.submittedByImg[0]);
-
   };
 
   // const addRecipeToDB = async (e) => {
@@ -217,7 +216,7 @@ export default function SubmitRecipe() {
 
       console.log("Request Body:", requestBody);
 
-      const response = await fetch("http://localhost:3000/api/submit-recipe", {
+      const response = await fetch("/api/submit-recipe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

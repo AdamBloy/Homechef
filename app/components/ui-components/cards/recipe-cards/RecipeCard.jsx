@@ -31,7 +31,7 @@ export default function RecipeCard() {
     const fetchCurrentRecipe = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/recipe-info?recipeID=${pathNameResult}`
+          `/api/recipe-info?recipeID=${pathNameResult}`
         );
         if (response.ok) {
           // console.log(response.json());

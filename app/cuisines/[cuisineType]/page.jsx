@@ -33,7 +33,7 @@ export default function Hero() {
     const fetchUserRecipes = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/cuisine-type?cuisineType=${pathNameResult}`
+          `/api/cuisine-type?cuisineType=${pathNameResult}`
         );
         if (response.ok) {
           const { recipes } = await response.json();

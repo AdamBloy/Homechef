@@ -27,9 +27,7 @@ export default function Hero() {
   useEffect(() => {
     const fetchUserRecipes = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:3000/api/recipe-by-user?userID=${userID}`
-        );
+        const response = await fetch(`/recipe-by-user?userID=${userID}`);
         if (response.ok) {
           const { recipes } = await response.json();
           const recipesWithConvertedImages = recipes.map((recipe) => {

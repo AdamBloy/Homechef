@@ -143,7 +143,7 @@ export default function SubmitRecipe() {
 
       console.log("Request Body:", requestBody);
 
-      const response = await fetch("http://localhost:3000/api/submit-recipe", {
+      const response = await fetch("/api/submit-recipe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
