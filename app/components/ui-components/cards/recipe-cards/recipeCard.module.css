@@ -19,6 +19,19 @@
   padding: 2rem;
 }
 
+@media (max-width: 606px) {
+  .recipeCard {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 378px) {
+  .recipeCard {
+    padding: 1rem;
+  }
+}
+
 .recipeCard img {
   max-height: 20rem;
   max-width: 100%;
@@ -37,6 +50,30 @@
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .recipeBackButton {
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 708px) {
+  .recipeBackButton {
+    font-size: 80%;
+  }
+}
+@media (max-width: 658px) {
+  .recipeBackButton {
+    font-size: 60%;
+    text-align: center;
+  }
+}
+@media (max-width: 606px) {
+  .recipeBackButton {
+    font-size: 100%;
+  }
+}
+
 .recipeBackButton:hover {
   background-color: var(--primary-white);
   color: var(--secondary-background);
@@ -48,6 +85,23 @@
   padding: 1rem;
   border: 1px solid var(--primary-yellow);
   transition: all 0.5s;
+}
+
+@media (max-width: 1148px) {
+  .printButton {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 968px) {
+  .printButton {
+    padding: 0.25rem;
+  }
+}
+@media (max-width: 848px) {
+  .printButton {
+    font-size: 80%;
+    width: 100%;
+  }
 }
 .printButton:hover {
   background-color: var(--primary-white);
@@ -61,6 +115,12 @@
   justify-content: flex-end;
   transform: translate(1px);
 }
+
+@media (max-width: 768px) {
+  .recipeIconsContainer {
+    flex-direction: column;
+  }
+}
 .receipeCardIcons {
   background-color: var(--primary-grey);
   display: flex;
@@ -71,25 +131,63 @@
   width: 15%;
 }
 
+@media (max-width: 968px) {
+  .receipeCardIcons {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .receipeCardIcons {
+    width: 30%;
+  }
+}
+
 .recipeMainInfo {
   border: 1px solid transparent;
   border-left: 1px solid var(--primary-grey);
+}
+
+@media (max-width: 606px) {
+  .recipeMainInfo {
+    border-left: none;
+  }
 }
 
 .ingredientListContainer {
   padding-left: 2rem;
   padding-top: 0.25rem;
 }
+
+@media (max-width: 606px) {
+  .ingredientListContainer {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .ingredientList {
   padding-top: 0.5rem;
   list-style: none;
   font-weight: 200;
 }
 
+@media (max-width: 378px) {
+  .ingredientList {
+    font-size: 85%;
+  }
+}
+
 .methodContainer {
   border-left: 1px solid var(--primary-grey);
   padding-left: 1rem;
   font-weight: 200;
+}
+
+@media (max-width: 606px) {
+  .methodContainer {
+    border-left: none;
+  }
 }
 .currentRecipeInfoContainer {
   padding: 1rem;
@@ -102,11 +200,43 @@
   margin-top: 2rem;
   /* border-bottom: 1px solid var(--primary-yellow); */
 }
+
+@media (max-width: 848px) {
+  .currentRecipeInfoContainer h1 {
+    font-size: 300%;
+  }
+}
+@media (max-width: 768px) {
+  .currentRecipeInfoContainer h1 {
+    font-size: 225%;
+  }
+}
+@media (max-width: 378px) {
+  .currentRecipeInfoContainer h1 {
+    font-size: 175%;
+  }
+}
 .currentRecipeInfoContainer h2 {
   font-weight: 500;
   font-size: 125%;
   border-bottom: 1px solid var(--primary-yellow);
   padding-bottom: 1rem;
+}
+@media (max-width: 848px) {
+  .currentRecipeInfoContainer h2 {
+    font-size: 115%;
+  }
+}
+@media (max-width: 768px) {
+  .currentRecipeInfoContainer h2 {
+    font-size: 105%;
+  }
+}
+
+@media (max-width: 378px) {
+  .currentRecipeInfoContainer h2 {
+    font-size: 95%;
+  }
 }
 .recipeLongDescription {
   font-weight: 100;
@@ -115,9 +245,26 @@
   padding-top: 2rem;
 }
 
+@media (max-width: 848px) {
+  .recipeLongDescription {
+    font-size: 115%;
+  }
+}
+
+@media (max-width: 378px) {
+  .recipeLongDescription {
+    font-size: 95%;
+  }
+}
 .methodList {
   padding-top: 1rem;
   padding-left: 1rem;
+}
+
+@media (max-width: 378px) {
+  .methodList {
+    font-size: 85%;
+  }
 }
 .methodOrderedList {
   padding-left: 1rem;
@@ -184,10 +331,22 @@
   transition: all 1s;
 }
 .submitName h2 {
-  transition: all0 1s;
+  transition: all 1s;
+}
+
+@media (max-width: 378px) {
+  .submitName h2 {
+    font-size: 95%;
+    font-weight: 500;
+  }
+}
+@media (max-width: 378px) {
+  .submitName p {
+    font-size: 85%;
+  }
 }
 .submitName p {
-  transition: all0 1s;
+  transition: all 1s;
 }
 
 .recipeSubmitButton {
