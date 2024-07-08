@@ -28,7 +28,7 @@ export default function Home() {
     const fetchLiveRecipes = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/all-recipe?resultsPerPage=${resultsPerPage}&page=${pageNo}&skipvalue=${skipValue}`
+          `/api/all-recipe?resultsPerPage=${resultsPerPage}&page=${pageNo}&skipvalue=${skipValue}`
         );
         if (response.ok) {
           const { recipes, numberOfRecipes } = await response.json();
